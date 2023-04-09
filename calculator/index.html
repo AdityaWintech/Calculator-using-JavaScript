@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <!-- google fonts for sponser -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">
+    <!-- google fonts 2 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <!-- =google fonts signature -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <!-- Display Screen -->
+    <div class="display">
+        <input id="screen" type="text" placeholder="0">
+    </div>
+    <!-- Buttons -->
+    <div class="buttons">
+        <div class="row">
+            <button id="ce" onclick="backspc()">CE</button>
+            <button onclick="factorial()">X&nbsp;!</button>
+            <button class="btn">(</button>
+            <button class="btn">)</button>
+            <button class="btn">%</button>
+            <button id="ac" onclick="screen.value=''">AC</button>
+        </div>
+        <!--  -->
+        <div class="row">
+            <button onclick="sin()">Sin</button>
+            <button onclick="pi()">π</button>
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn">÷</button>
+        </div>
+        <!--  -->
+        <div class="row">
+            <button onclick="cos()">Cos</button>
+            <button onclick="log()">Log</button>
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn">x</button>
+        </div>
+        <!--  -->
+        <div class="row">
+            <button onclick="tan()" class="btn">Tan</button>
+            <button onclick="sqrt()"><b style="font-weight: bold;">√</b></button>
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn">-</button>
+        </div>
+        <!--  -->
+        <div class="row">
+            <button onclick="e()">e</button>
+            <button onclick="pow()">x<span style="position: relative;bottom:0.4em; left: 0.2em;font-size:14px;"><b>y</b></span></button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button id="eval" onclick="screen.value=eval(screen.value)">=</button>
+            <button class="btn">+</button>
+        </div>
+    </div>
+    <h3 id="wintech">WinTech</3>
+</div>
+
+
+
+<script src="./script.js"></script>    
+</body>
+</html>
